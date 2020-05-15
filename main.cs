@@ -1,12 +1,18 @@
-using System;
+﻿using System;
+using static System.Console;
+using static System.Convert;
+using Library;
 
-using static lib1;
-
-class MainClass {
-  public static void Main (string[] args) {
-    string a = Console.ReadLine();
-    int b = Convert.ToInt32(Console.ReadLine());
-stpow(a,b);
-  
-  }
+namespace zadanie1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            WriteLine(lib1.stpow("ha", 4));
+            WriteLine(lib1.rev("hello"));
+            WriteLine(lib1.remov("aHeallao","a"));
+            WriteLine(lib1.leng("Hello, friends!"));
+        }
+    }
 }
